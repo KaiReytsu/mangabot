@@ -9,7 +9,7 @@ def fileExist(filename):
     return path.exists(filename)
 
 
-def parser(filename):
+def parserJson(filename):
     with open(filename, "r") as read_file:
         data = json.load(read_file)
         return data
